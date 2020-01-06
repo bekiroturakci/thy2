@@ -1,0 +1,6 @@
+<h1>Burası Ürün Yorumları</h1>
+<ul class="list-group" *ngIf="comments;else yok">
+    <li class="list-group-item" *ngFor="let c of comments">
+       {{c.comment}}
+    </li>
+</ul>

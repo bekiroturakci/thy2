@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'thy',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'thy1';
+
+  seciliSehir;
+  sehirler: string[] = ["İstanbul", "Ankara", "İzmir", "Bursa", "Konya"];
+  seciliYap(s: string) {
+    this.seciliSehir = s;
+  }
 }
